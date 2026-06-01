@@ -212,14 +212,16 @@ function Dashboard() {
                 </div>
               ) : (
                 <div className="chart-wrap">
-                  <ResponsiveContainer width="100%" height={280}>
+                  <ResponsiveContainer width="100%" height={300}>
                     <PieChart>
                       <Pie
                         data={expenseChartData}
                         dataKey="value"
                         nameKey="name"
-                        innerRadius={70}
-                        outerRadius={105}
+                        cx="50%"
+                        cy="50%"
+                        innerRadius="52%"
+                        outerRadius="78%"
                         paddingAngle={4}
                       >
                         {expenseChartData.map((entry, index) => (
@@ -339,14 +341,16 @@ function Dashboard() {
                 </div>
               ) : (
                 <div className="chart-wrap">
-                  <ResponsiveContainer width="100%" height={280}>
+                  <ResponsiveContainer width="100%" height={300}>
                     <PieChart>
                       <Pie
                         data={incomeChartData}
                         dataKey="value"
                         nameKey="name"
-                        innerRadius={70}
-                        outerRadius={105}
+                        cx="50%"
+                        cy="50%"
+                        innerRadius="52%"
+                        outerRadius="78%"
                         paddingAngle={4}
                       >
                         {incomeChartData.map((entry, index) => (

@@ -1285,3 +1285,45 @@ body {
     min-width: 0;
   }
 }
+.chart-card {
+  overflow: hidden;
+}
+
+.chart-wrap {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) minmax(180px, 0.8fr);
+  gap: 18px;
+  align-items: center;
+}
+
+.chart-wrap .recharts-responsive-container {
+  min-width: 0;
+}
+
+@media (max-width: 1400px) {
+  .chart-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-legend {
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .chart-card {
+    min-height: auto;
+  }
+
+  .chart-wrap {
+    gap: 12px;
+  }
+
+  .legend-row {
+    grid-template-columns: auto 1fr;
+  }
+
+  .legend-row small {
+    grid-column: 2;
+  }
+}
