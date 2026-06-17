@@ -1327,3 +1327,56 @@ body {
     grid-column: 2;
   }
 }
+/* ===== MOBILE STARTING BALANCE FORM ===== */
+
+.starting-balance-form {
+  width: 100%;
+}
+
+.starting-balance-form input {
+  width: 100% !important;
+  height: 56px !important;
+  min-height: 56px !important;
+  padding: 0 18px !important;
+  border-radius: 16px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  box-sizing: border-box !important;
+}
+
+.starting-balance-form input::placeholder {
+  font-size: 16px !important;
+  color: #94a3b8 !important;
+}
+
+.starting-balance-form .btn {
+  width: 100% !important;
+  height: 56px !important;
+  min-height: 56px !important;
+  padding: 0 20px !important;
+  border-radius: 16px !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+}
+
+@media (max-width: 700px) {
+  .starting-balance-card {
+    padding: 28px !important;
+    gap: 24px !important;
+  }
+
+  .starting-balance-form {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    width: 100% !important;
+  }
+
+  .starting-balance-form input,
+  .starting-balance-form .btn {
+    width: 100% !important;
+    height: 58px !important;
+    min-height: 58px !important;
+  }
+}
