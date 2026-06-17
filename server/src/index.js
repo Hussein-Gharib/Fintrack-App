@@ -28,10 +28,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // API routes
-app.use("/api/auth", require("./src/routes/authRoutes"));
-app.use("/api/categories", require("./src/routes/categoryRoutes"));
-app.use("/api/transactions", require("./src/routes/transactionRoutes"));
-app.use("/api/dashboard", require("./src/routes/dashboardRoutes"));
+app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/categories", require("./routes/categoryRoutes"));
+app.use("/api/transactions", require("./routes/transactionRoutes"));
+app.use("/api/dashboard", require("./routes/dashboardRoutes"));
 
 // Test route
 app.get("/", (req, res) => {
