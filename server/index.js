@@ -13,7 +13,7 @@ const allowedOrigins = [
 app.use(
   cors({
     origin(origin, callback) {
-      // Allow requests without an origin, مثل Postman وVercel health checks
+      
       if (!origin || allowedOrigins.includes(origin)) {
         return callback(null, true);
       }
