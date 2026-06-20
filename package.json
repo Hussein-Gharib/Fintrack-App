@@ -1,13 +1,14 @@
 {
   "name": "fintrack",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "FinTrack full-stack application",
+  "private": true,
   "scripts": {
-  "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
-  "server": "npm run dev --prefix server",
-  "client": "npm run dev --prefix client"
-},
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
